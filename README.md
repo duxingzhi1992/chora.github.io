@@ -1,37 +1,22 @@
-## Welcome to GitHub Pages
+# hexo-theme-autumn
 
-You can use the [editor on GitHub](https://github.com/duxingzhi1992/chora.github.io/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+[![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg)](https://github.com/prettier/prettier)
+[![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/FrontendSophie/hexo-theme-autumn/blob/master/LICENSE)
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+> Recreate to salute one classic and elegant wordpress theme — `button`.
 
-### Markdown
+![mmt](https://cdn.jsdelivr.net/gh/frontendsophie/hexo-theme-autumn@1.0.0/source/img/cover.png)
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+## Demo
 
-```markdown
-Syntax highlighted code block
+[preview](http://8uf4mm.coding-pages.com/)
 
-# Header 1
-## Header 2
-### Header 3
+## Usage
 
-- Bulleted
-- List
+1. `git clone https://github.com/FrontendSophie/hexo-theme-autumn.git themes/autumn`
+2. Open main config file `_config.yml` and update `theme: autumn`
+3. Tips: Use `<!-- more -->` for abstract
 
-1. Numbered
-2. List
+## Plugins
 
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/duxingzhi1992/chora.github.io/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+[hexo-infinite-scroll](https://github.com/FrontendSophie/hexo-infinite-scroll)
