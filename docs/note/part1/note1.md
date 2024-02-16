@@ -1,3 +1,8 @@
+---
+layout: doc
+---
+
+
 # note
 
 ## name

@@ -13,7 +13,18 @@ export default defineConfig({
     nav: [
       { text: '主页', link: '/' },
       { text: '示例', link: '/markdown-examples' },
-      { text: '笔记', link: '/note/part1/note1' }
+      { text: '笔记', link: '/note/part1/' },
+      {
+        text: "摘要",
+        items: [
+          {
+            text: "guide",
+            link: '/guide/one',
+          },
+          { text: "config", link: '/config/' },
+          // { text: "003", link: '/guide/two' },
+        ],
+      },
     ],
 
 
@@ -24,36 +35,73 @@ export default defineConfig({
     navbar: true, //开启导航栏，我设置成false也没啥用不知道为啥
     // sidebar: false, // 关闭侧边栏
     // lastUpdated: true, // 显示上次修改时间
-    aside: "lift", // 设置右侧侧边栏在左侧显示
+    aside: "true", // 设置右侧侧边栏在左侧显示
 
     // 侧边栏
-    sidebar: [
-      {
-        text: 'Examples',
-        items: [
-          { text: 'Markdown Examples', link: '/markdown-examples' },
-          { text: 'Runtime API Examples', link: '/api-examples' },
-          // { text: 'note 1', link: '/note/part1/note1' }
-        ],
-      },
-      {
-        text: 'part1',
-        items: [
-          { text: 'note1', link: '/note/part1/note1' },
-        ],
+    sidebar: {
+      '/guide/': [
+        {
+          text: 'Guide',
+          collapsed: false, //显示折叠按钮，打开时折叠为ture
+          items: [
+            { text: 'Index', collapsed: false, link: '/guide/' },
+            { text: 'One', link: '/guide/one' },
+            { text: 'Two', link: '/guide/two' }
+          ]
+        }
+      ],
 
-      },
-      {
-        text: 'part2',
-        items: [
-          { text: 'note2', link: '/note/part2/note2' },
-        ],
-      }
-    ],
+      '/config/': [
+        {
+          text: 'Config',
+          items: [
+            { text: 'Index', link: '/config/' },
+            { text: 'Three', link: '/config/three' },
+            { text: 'Four', link: '/config/four' }
+          ]
+        }
+      ],
+      '/note/part1/': [
+        {
+          text: 'note',
+          collapsed: false, //显示折叠按钮，打开时折叠为ture
+          items: [
+            { text: 'Index', link: '/note/part1/' },
+            { text: 'note1', link: '/note/part1/note1' },
+            { text: 'note2', link: '/note/part1/note2' }
+          ]
+        }
+      ]
+    },
+
+    // [
+    // {
+
+    // text: 'Examples',
+    // items: [
+    //   { text: 'Markdown Examples', link: '/markdown-examples' },
+    //   { text: 'Runtime API Examples', link: '/api-examples' },
+    //   // { text: 'note 1', link: '/note/part1/note1' }
+    // ],
+    // },
+    //   {
+    //     text: 'part1',
+    //     items: [
+    //       { text: 'note1', link: '/note/part1/note1' },
+    //     ],
+
+    //   },
+    //   {
+    //     text: 'part2',
+    //     items: [
+    //       { text: 'note2', link: '/note/part2/note2' },
+    //     ],
+    //   }
+    // ],
 
 
     socialLinks: [
-      { icon: 'github', link: 'https://vlate.github.io' }
+      { icon: 'github', link: 'https://github.com/vlate' }
     ],
 
 
@@ -62,6 +110,12 @@ export default defineConfig({
     // footer: {
     //   copyright: "书写是为了遗忘之后再记得。",
     // },
+
+
+    docFooter: {
+      prev: '上一页',
+      next: '下一页'
+    },
 
     // 设置搜索框的样式
     search: {

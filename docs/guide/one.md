@@ -1,5 +1,5 @@
 ---
-aside: ture
+sidebar: true
 ---
 
 # Markdown Extension Examples
@@ -13,27 +13,45 @@ VitePress provides Syntax Highlighting powered by [Shiki](https://github.com/shi
 **Input**
 
 ````md
+
 ```js{4}
-export default {
+
+exportdefault {
+
   data () {
+
     return {
+
       msg: 'Highlighted!'
+
     }
+
   }
+
 }
+
 ```
+
 ````
 
 **Output**
 
 ```js{4}
-export default {
+
+exportdefault {
+
   data () {
+
     return {
+
       msg: 'Highlighted!'
+
     }
+
   }
+
 }
+
 ```
 
 ## Custom Containers
@@ -41,47 +59,73 @@ export default {
 **Input**
 
 ```md
+
 ::: info
+
 This is an info box.
+
 :::
+
 
 ::: tip
+
 This is a tip.
+
 :::
+
 
 ::: warning
+
 This is a warning.
+
 :::
+
 
 ::: danger
+
 This is a dangerous warning.
+
 :::
 
+
 ::: details
+
 This is a details block.
+
 :::
+
 ```
 
 **Output**
 
 ::: info
+
 This is an info box.
+
 :::
 
 ::: tip
+
 This is a tip.
+
 :::
 
 ::: warning
+
 This is a warning.
+
 :::
 
 ::: danger
+
 This is a dangerous warning.
+
 :::
 
 ::: details
+
 This is a details block.
+
 :::
 
 ## More
