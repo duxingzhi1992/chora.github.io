@@ -2,6 +2,7 @@ import { defineConfig } from 'vitepress'
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
+  base: "/vlate/",
   head: [["link", { rel: "icon", href: "/logo.svg" }]],
   title: "CHORA",
   description: "A NEW SPACE",
