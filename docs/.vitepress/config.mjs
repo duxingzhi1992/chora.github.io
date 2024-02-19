@@ -55,9 +55,9 @@ export default defineConfig({
           text: '简介',
           collapsed: false, //显示折叠按钮，打开时折叠为ture
           items: [
-            { text: 'Index', collapsed: false, link: '/info/info' },
-            { text: 'One', link: '/info/info' },
-            { text: 'Two', link: '/info/info' }
+            { text: '首页', link: '/info/info' },
+            // { text: 'One', link: '/info/info' },
+            // { text: 'Two', link: '/info/info' }
           ]
         }
       ],
@@ -77,9 +77,9 @@ export default defineConfig({
           text: 'note',
           collapsed: false, //显示折叠按钮，打开时折叠为ture
           items: [
-            { text: 'Index', link: '/note/part1/' },
-            { text: 'note1', link: '/note/part1/note1' },
-            { text: 'note2', link: '/note/part1/note2' }
+            { text: '夜鸟', link: '/note/part1/' },
+            { text: '长江图', link: '/note/part1/长江图' },
+            { text: '班扎古鲁白玛的沉默', link: '/note/part1/班扎古鲁白玛的沉默' }
           ]
         }
       ]
