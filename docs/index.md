@@ -4,8 +4,8 @@ layout: home
 
 hero:
   name: "CHORA"
-  text: ""
-  tagline: Chora 万物被授予秩序之前，准备其基础的场所或空间。最初见于柏拉图《蒂迈欧篇》。
+  # text: "书写是为了遗望之后再记得。"
+  tagline: Chora 万物被授予秩序之前，准备其基础的场所或空间。初见于柏拉图《蒂迈欧篇》。
   image:  
     src: /background.svg
     alt: 背景图

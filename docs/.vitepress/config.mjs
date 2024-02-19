@@ -12,10 +12,10 @@ export default defineConfig({
     // 顶部导航栏
     nav: [
       { text: '主页', link: '/' },
-      { text: '示例', link: '/markdown-examples' },
-      { text: '笔记', link: '/note/part1/' },
+      { text: '说明', link: '/info/info' },
+      { text: '摘要', link: '/note/part1/' },
       {
-        text: "摘要",
+        text: "笔记",
         items: [
           {
             text: "guide",
@@ -47,6 +47,17 @@ export default defineConfig({
             { text: 'Index', collapsed: false, link: '/guide/' },
             { text: 'One', link: '/guide/one' },
             { text: 'Two', link: '/guide/two' }
+          ]
+        }
+      ],
+      '/info/': [
+        {
+          text: '简介',
+          collapsed: false, //显示折叠按钮，打开时折叠为ture
+          items: [
+            { text: 'Index', collapsed: false, link: '/info/info' },
+            { text: 'One', link: '/info/info' },
+            { text: 'Two', link: '/info/info' }
           ]
         }
       ],
